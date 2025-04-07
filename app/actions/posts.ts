@@ -26,3 +26,19 @@ export async function getPost(id: number): Promise<Post> {
   
   return response.json();
 }
+
+export async function createPost(post: Omit<Post, 'id'>): Promise<Post> {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(post),
+  });
+  
+  if (!response.ok) {
+    throw new Error('Failed to create post');
+  }
+  
+  return response.json();
+}

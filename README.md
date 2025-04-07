@@ -14,13 +14,6 @@ pnpm dev
 bun dev
 ```
 
-// need show title and body as a cards from shadcn, can mock
-// add button that add post with title and body
-
-// нужно вывести все данные карточками просто простыней
-// кнопка которая делаяет запрос на кастомный эндопоинт и делаент новый пост
-// использовать тенстак реакт квери юс мутайшон
-// юс квери юс мутейшн инвалидация
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
